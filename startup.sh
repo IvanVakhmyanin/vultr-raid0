@@ -16,7 +16,7 @@ set base-url http://archive.ubuntu.com/ubuntu/dists/focal/main/installer-amd64/c
 kernel ${base-url}/linux
 initrd ${base-url}/initrd.gz
 # Here goes the URL of the installation config. Must be accessible over plain HTTP, HTTPS does not work.
-imgargs linux auto=true priority=critical url=http://example.com/path/preseed-raid0.cfg
+imgargs linux auto=true priority=critical url=https://raw.githubusercontent.com/IvanVakhmyanin/vultr-raid0/master/preseed-raid0.cfg
 boot
 ' > /boot/ubuntu-install-raid0.ipxe
 
