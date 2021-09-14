@@ -12,7 +12,7 @@ apt-get -y install grub-ipxe
 
 echo '#!ipxe
 dhcp
-set base-url http://archive.ubuntu.com/ubuntu/dists/bionic/main/installer-amd64/current/images/netboot/ubuntu-installer/amd64
+set base-url http://archive.ubuntu.com/ubuntu/dists/focal/main/installer-amd64/current/legacy-images/netboot/ubuntu-installer/amd64/
 kernel ${base-url}/linux
 initrd ${base-url}/initrd.gz
 # Here goes the URL of the installation config. Must be accessible over plain HTTP, HTTPS does not work.
